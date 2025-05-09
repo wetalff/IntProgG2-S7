@@ -1,15 +1,16 @@
 #Pares
 
 def par():
-    Contador = 0
-    acumulador = 1
-    N = 2
-    M = int(input("Ingrese un numero entero positivo: "))
+ contador = 0
+ valor = 2
+ producto = 1
+ Num = int(input("Ingrese un número entero positivo: "))
+ while contador < Num:
+      producto *= valor
+      contador += 1
+      valor += 2 
     
-    while Contador < M:
-        acumulador *= N
-        Contador += 1
-        N += 2
-    print(f"La multiplicacion de los {M} numeros pares es de {acumulador}")
-    
+ print("El producto de los primeros", Num, "números pares es:", producto)
+
+
 par()
